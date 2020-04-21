@@ -1,0 +1,40 @@
+@media(max-width: 1440px) {
+    .global .global-name img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .global .global-name h2 {
+        font-size: 1.5rem;
+    }
+
+    .global p {
+        font-size: 1.1rem;
+    }
+
+    .slide {
+        top: 15vh;
+    }
+
+    .slide .content div:first-child img {
+        height: 75px;
+    }
+    
+    .slide .content div:first-child h3 {
+        font-size: 2rem;
+        margin-left: 1.5rem;
+    }
+
+    .slide .content div:nth-child(3) {
+        font-size: 1.5rem;
+    }
+
+    .slide .content div:nth-child(4) {
+        font-size: 1.5rem;
+    }
+
+    .slide .content > p {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+}

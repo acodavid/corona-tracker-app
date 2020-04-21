@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --red-color: #FF080D;
+    --light-color: #bbb6b6;
+    --green-color: rgb(37, 226, 62);
+    --yellow-color: #f4f742;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('../img/background.jpg') no-repeat center center/cover;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/*Global*/
+
+.global {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    height: 20vh;
+    border-bottom: var(--light-color) 2px solid;
+    color: #fff;
+}
+
+.global:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.global p {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+.global .global-name {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 1rem;
+    z-index: 2;
+}
+
+.global .global-name img {
+    width: 80px;
+    height: 80px;
+}
+
+.global .global-name h2 {
+    margin-left: 1rem;
+    font-size: 2.5rem;
+}
+
+.global .global-stat {
+    flex: 1;
+    width: 80%;
+    padding: 1rem;
+    z-index: 2;
+}
+
+.global .global-stat p:first-child span {
+    color: var(--yellow-color);
+}
+
+.global .global-stat p:nth-child(2) span {
+    color: var(--red-color)
+}
+
+.global .global-stat p:nth-child(3) span {
+    color: var(--green-color);
+}
+
+.global .global-percentage {
+    width: 80%;
+    flex: 1;
+    padding: 1rem;
+    z-index: 2;
+}
+
+.global .global-percentage p:first-child span {
+    color: var(--red-color);
+}
+
+.global .global-percentage p:last-child span {
+    color: var(--green-color);
+}
+
+/*Slider*/
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 80vh;
+    width: 100vw;
+    z-index: 0;
+}
+
+.slider:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.slide { 
+    position: absolute;
+    top: 15vh;
+    left: 10vw;
+    padding: 2rem;
+    z-index: 2;
+    width: 80%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    
+}
+
+.slide.current {
+    opacity: 1;
+}
+
+
+.slide .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slide .content div:first-child {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 75%;
+}
+
+.slide .content div:first-child img {
+    height: 100px;
+}
+
+.slide .content div:first-child h3 {
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+
+
+.slide .content > p {
+    font-size: 2rem;
+    padding: 2rem;
+    width: 75%;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.slide .content > p > span {
+    color: var(--yellow-color);
+}
+
+.slide .content div:nth-child(3),
+.slide .content div:nth-child(4)
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    padding: 2rem;
+    width: 75%;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.slide .content div:nth-child(3) p,
+.slide .content div:nth-child(4) p
+{
+    flex: 1;
+    margin: 0 2rem;
+}
+
+.slide .content div:nth-child(3) p:first-child span,
+.slide .content div:nth-child(4) p:first-child span
+{
+    color: var(--red-color);
+}
+
+.slide .content div:nth-child(3) p:last-child span,
+.slide .content div:nth-child(4) p:last-child span
+{
+    color: var(--green-color);
+}
+
+/*Footer*/
+
+.footer {
+    position: relative;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: var(--light-color) 2px solid;
+}
+
+.footer:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.footer p {
+    z-index: 2;
+}
+
+/*Buttons*/
+.buttons button#next {
+    position: absolute;
+    top: 60%;
+    right: 100px;
+}
+
+.buttons button#prev {
+    position: absolute;
+    top: 60%;
+    left: 100px;
+}
+
+.buttons button {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 20px 24px;
+    border-radius: 50%;
+    outline: none;
+}
+
+.buttons button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+@media(max-width: 2560px), (min-width: 1441) {
+    .slide {
+        top: 25vh;
+    }
+}

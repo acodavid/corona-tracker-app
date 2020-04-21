@@ -1,0 +1,109 @@
+@media(max-width: 425px) {
+    .global {
+        height: 15vh;
+    }
+
+    .global .global-name img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .global .global-name h2 {
+        font-size: 1.1rem;
+    }
+
+    .global p {
+        font-size: 0.9rem;
+    }
+
+    .slide {
+        top: 25vh;
+    }
+
+    .slide .content div:first-child {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .slide .content div:first-child img {
+        height: 40px;
+    }
+
+    .slide .content div:first-child h3 {
+        font-size: 1.1rem;
+        margin-left: 0.7rem;
+    }
+
+    
+
+    .slide .content div:nth-child(3) {
+        flex-direction: column;
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .slide .content div:nth-child(3) p {
+        margin-bottom: 1rem;
+    }
+
+    .slide .content > p {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .buttons button#next {
+        top: 55%;
+        right: 12px;
+    }
+
+    .buttons button#prev {
+        top: 55%;
+        left: 12px;
+    }
+
+    .buttons button {
+        padding: 7px 10px;
+    }
+}
+
+@media(max-width: 375px) {
+
+    .global p {
+        font-size: 0.7rem;
+    }
+
+    .slide {
+        top: 20vh;
+    }
+
+    .slide .content div:nth-child(3) {
+        font-size: 0.8rem;
+    }
+
+    .slide .content > p {
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width: 320px) {
+
+    .global .global-name img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .global .global-name h2 {
+        font-size: 1rem;
+    }
+
+    
+
+    .slide .content div:first-child img {
+        height: 35px;
+    }
+
+    .slide .content div:first-child h3 {
+        font-size: 1rem;
+        margin-left: 0.45rem;
+    }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1440.css">
+    <link rel="stylesheet" href="css/style1024.css">
+    <link rel="stylesheet" href="css/style768.css">
+    <link rel="stylesheet" href="css/style425.css">
+    <title>Corona Project</title>
+</head>
+
+<body>
+
+    <!--Section 1 - Global-->
+    <section class="global">
+        <div class="global-name">
+            <img src="img/earth-png-1600.png" alt="">
+            <h2>Global COVID-19</h2>
+        </div>
+        <div class="global-stat">
+            <p>Broj slucajeva: <span class="span-cases-global">-</span></p>
+            <p>Broj preminulih: <span class="span-deaths-global">-</span></p>
+            <p>Broj oporavljenih: <span class="span-recovered-global">-</span></p>
+        </div>
+        <div class="global-percentage">
+            <p>Procenat smrtnosti: <span id="percentage-death-global">-%</span></p>
+            <p>Procenat oporavljenih: <span id="percentage-recovered-global">-%</span></p>
+        </div>
+    </section>
+
+    <!--Countries - Slider-->
+    <div class="slider">
+
+        <div class="slide current">
+            <div class="content">
+                <div>
+                    <img src="img/flag-of-serbia.jpg" alt="">
+                    <h3>Srbija</h3>
+                </div>
+                <p>Broj slucajeva: <span id="serbia-cases">-</span></p>
+                <div>
+                    <p>Broj preminulih: <span id="serbia-deaths">-</span></p>
+                    <p>Broj oporavljenih: <span id="serbia-recovered">-</span></p>
+                </div>
+                <div>
+                    <p>Procenat smrtnosti: <span id="percentage-death-serbia">-%</span></p>
+                    <p>Procenat oporavljenih: <span id="percentage-recovered-serbia">-%</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <div>
+                    <img src="img/1200px-Flag_of_Croatia.svg.png" alt="">
+                    <h3>Hrvatska</h3>
+                </div>
+                <p>Broj slucajeva: <span id="croatia-cases">-</span></p>
+                <div>
+                    <p>Broj preminulih: <span id="croatia-deaths">-</span></p>
+                    <p>Broj oporavljenih: <span id="croatia-recovered">-</span></p>
+                </div>
+                <div>
+                    <p>Procenat smrtnosti: <span id="percentage-death-croatia">-%</span></p>
+                    <p>Procenat oporavljenih: <span id="percentage-recovered-croatia">-%</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <div>
+                    <img src="img/Flag_of_Bosnia_and_Herzegovina.png" alt="">
+                    <h3>Bosna i Hercegovina</h3>
+                </div>
+                <p>Broj slucajeva: <span id="bih-cases">-</span></p>
+                <div>
+                    <p>Broj preminulih: <span id="bih-deaths">-</span></p>
+                    <p>Broj oporavljenih: <span id="bih-recovered">-</span></p>
+                </div>
+                <div>
+                    <p>Procenat smrtnosti: <span id="percentage-death-bih">-%</span></p>
+                    <p>Procenat oporavljenih: <span id="percentage-recovered-bih">-%</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <div>
+                    <img src="img/Flag_of_Montenegro.png" alt="">
+                    <h3>Crna Gora</h3>
+                </div>
+                <p>Broj slucajeva: <span id="montenegro-cases">-</span></p>
+                <div>
+                    <p>Broj preminulih: <span id="montenegro-deaths">-</span></p>
+                    <p>Broj oporavljenih: <span id="montenegro-recovered">-</span></p>
+                </div>
+                <div>
+                    <p>Procenat smrtnosti: <span id="percentage-death-montenegro">-%</span></p>
+                    <p>Procenat oporavljenih: <span id="percentage-recovered-montenegro">-%</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <div>
+                    <img src="img/makedonija.png" alt="">
+                    <h3>Makedonija</h3>
+                </div>
+
+                <p>Broj slucajeva: <span id="mac-cases">-</span></p>
+                <div>
+                    <p>Broj preminulih: <span id="mac-deaths">-</span></p>
+                    <p>Broj oporavljenih: <span id="mac-recovered">-</span></p>
+                </div>
+                <div>
+                    <p>Procenat smrtnosti: <span id="percentage-death-mac">-%</span></p>
+                    <p>Procenat oporavljenih: <span id="percentage-recovered-mac">-%</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <div>
+                    <img src="img/Flag_of_Slovenia.png" alt="">
+                    <h3>Slovenija</h3>
+                </div>
+
+                <p>Broj slucajeva: <span id="slo-cases">-</span></p>
+                <div>
+                    <p>Broj preminulih: <span id="slo-deaths">-</span></p>
+                    <p>Broj oporavljenih: <span id="slo-recovered">-</span></p>
+                </div>
+                <div>
+                    <p>Procenat smrtnosti: <span id="percentage-death-slo">-%</span></p>
+                    <p>Procenat oporavljenih: <span id="percentage-recovered-slo">-%</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Buttons for slider-->
+    <div class="buttons">
+        <button id="prev"><i class="fas fa-arrow-left"></i></button>
+        <button id="next"><i class="fas fa-arrow-right"></i></button>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+        <p>Copyright &copy; 2020 All rights reserved. Designed by Aleksandar Davidovic.</p>
+    </footer>
+
+    <script src="js/corona.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
